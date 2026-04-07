@@ -1,18 +1,277 @@
 <!DOCTYPE html>
 <html lang="az">
+
 <head>
     <meta charset="UTF-8">
-    <title>Profil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sərxan Əliyev | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at center, #1f2937, #111827, #000);
+        }
+
+        /* Şəkil üçün xüsusi kəsim və uyğunluq */
+        .profile-img {
+            object-position: top;
+        }
+    </style>
 </head>
-<body>
 
-    <h1>Əliyev Serxan</h1>
+<body class="bg-gray-900 text-white font-sans">
 
+    <nav
+        class="flex items-center justify-between p-6 fixed w-full z-20 top-0 bg-gray-900/90 backdrop-blur-md shadow-2xl border-b border-gray-800">
+        <div class="text-blue-500 font-black text-2xl uppercase tracking-tighter">Sərxan Əliyev</div>
+        <div class="hidden md:flex space-x-8 text-xs uppercase font-bold tracking-widest">
+            <a href="#about" class="hover:text-blue-400 transition">Haqqımda</a>
+            <a href="#skills" class="hover:text-blue-400 transition">Bacarıqlar</a>
+            <a href="#experience" class="hover:text-blue-400 transition">Təcrübə</a>
+            <a href="#education" class="hover:text-blue-400 transition">Təhsil</a>
+            <a href="#contact" class="bg-blue-600 px-5 py-2 rounded-full hover:bg-blue-700 transition">Əlaqə</a>
+        </div>
+    </nav>
 
+    <section class="min-h-screen flex items-center justify-center hero-bg relative overflow-hidden py-20">
+        <div class="text-center z-10 px-4 mt-16">
+            <div class="relative inline-block mb-6">
+                <div
+                    class="p-1 rounded-full bg-gradient-to-b from-blue-600 to-transparent shadow-[0_0_30px_rgba(37,99,235,0.2)]">
+                    <img src="profil.jpg" alt="Sərxan Əliyev"
+                        class="w-40 h-40 md:w-64 md:h-64 rounded-full object-cover profile-img mx-auto border-2 border-gray-900">
+                </div>
+                <div
+                    class="absolute bottom-1 right-2 bg-blue-600 text-white p-1 rounded-lg text-[10px] font-bold uppercase px-3 shadow-lg border border-blue-400">
+                    Mühəndis</div>
+            </div>
 
-    <!-- Şəkil -->
-    <h3>Şəkil:</h3>
-    <img src="sekil.jpg" width="200">
+            <h1 class="text-4xl md:text-7xl font-black mb-2 tracking-tighter uppercase">SƏRXAN <span
+                    class="text-blue-600">ƏLİYEV</span></h1>
+            <p class="text-md md:text-xl text-gray-400 mb-8 uppercase tracking-[0.3em] font-light">Software Engineer</p>
+
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#experience"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold transition shadow-lg text-sm md:text-base">Təcrübəni
+                    İncələ</a>
+                <a href="https://github.com/SerxanAli" target="_blank"
+                    class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-full font-bold transition border border-gray-600 text-sm md:text-base"><i
+                        class="fab fa-github mr-2"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2
+                    class="text-2xl font-bold mb-8 inline-block border-b-4 border-blue-600 pb-2 uppercase tracking-wider">
+                    Haqqımda</h2>
+                <p class="text-lg text-gray-300 leading-relaxed mb-8">
+                    On ildən artıq mühəndislik təcrübəsinə malik peşəkaram. Həm dövlət strukturlarında geodeziya və
+                    xəritəçəkmə mühəndisliyi, həm də müasir proqram təminatı sahəsində geniş texniki biliklərə sahibəm.
+                    Analitik yanaşma və sistemli planlaşdırma iş prinsipimin əsasını təşkil edir.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center space-x-3 bg-gray-900/50 p-4 rounded-lg border border-gray-700/50">
+                        <i class="fas fa-language text-blue-500"></i>
+                        <span>İngilis & Rus dili (C1)</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-gray-900/50 p-4 rounded-lg border border-gray-700/50">
+                        <i class="fas fa-brain text-blue-500"></i>
+                        <span>Analitik Düşüncə & Problem Həlli</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black text-center mb-12 uppercase tracking-widest">Təhsil</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-800 p-6 rounded-2xl border-t-4 border-blue-600 shadow-xl">
+                    <span class="text-blue-500 font-bold text-sm">2024 - 2028</span>
+                    <h3 class="text-lg font-bold mt-2 leading-tight uppercase">Azərbaycan Dövlət İqtisad Universiteti
+                        (UNEC)</h3>
+                    <p class="text-gray-400 mt-1 text-sm">İnformasiya Texnologiyaları / Bakalavr</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl border-t-4 border-gray-600 shadow-xl">
+                    <span class="text-gray-500 font-bold text-sm">2008 - 2012</span>
+                    <h3 class="text-lg font-bold mt-2 leading-tight uppercase">Bakı Dövlət Universiteti (BDU)</h3>
+                    <p class="text-gray-400 mt-1 text-sm">Torpaq Kadastrı / Bakalavr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black text-center mb-12 uppercase tracking-widest">Texniki Bacarıqlar</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="skill-card bg-gray-900 p-8 rounded-2xl border border-gray-700">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-blue-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-500 uppercase">Web Dev</h3>
+                    <p class="text-gray-400 text-sm">HTML, CSS (SASS, Bootstrap), JavaScript, jQuery, React(Redux)</p>
+                </div>
+                <div class="skill-card bg-gray-900 p-8 rounded-2xl border border-gray-700">
+                    <div class="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-green-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-500 uppercase">Mobile & Backend</h3>
+                    <p class="text-gray-400 text-sm">JAVA, C#, iOS Development (Swift), Android Development (Java), SQL,
+                        Firebase</p>
+                </div>
+                <div class="skill-card bg-gray-900 p-8 rounded-2xl border border-gray-700">
+                    <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cube text-purple-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-purple-500 uppercase">3D modeling, Game Engineering</h3>
+                    <p class="text-gray-400 text-sm">Unity 3D, Blender 3D, ArcMap, AutoCAD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black text-center mb-12 uppercase tracking-widest">İş Təcrübəsi</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-gray-800 p-6 rounded-2xl border-l-4 border-blue-600 shadow-lg">
+                    <span class="text-blue-500 font-bold text-sm">2022 - BU GÜN</span>
+                    <h3 class="text-xl font-bold mt-1">İqtisadiyyat Nazirliyi Yanında Əmlak Məsələləri Dövlət Xidməti
+                    </h3>
+                    <p class="text-gray-400 italic text-sm mt-2">Dövlət mülkiyyətində olan torpaqların xəritələrinin
+                        tərtib olunması və elektronlaşdırılması proseslərinin idarə edilməsi.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl border-l-4 border-gray-600">
+                    <span class="text-gray-500 font-bold text-sm">2015 - 2022</span>
+                    <h3 class="text-xl font-bold mt-1 uppercase">Əmlak Məsələləri Dövlət Komitəsi</h3>
+                    <p class="text-gray-400 italic text-sm mt-2">TEKUİS - Xəritələrin vahid elektron bazaya işlənməsi və
+                        rəqəmsal kadastr məlumatlarının hazırlanması.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black text-center mb-12 uppercase tracking-widest">Önə Çıxan Layihələr</h2>
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+
+                <div
+                    class="group bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 hover:border-blue-500 transition-all duration-300 shadow-2xl">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-utensils text-blue-500 text-2xl"></i>
+                            </div>
+                            <span class="bg-blue-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase">SaaS
+                                Həlli</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 uppercase tracking-tight">Smart QR Menyu Sistemi</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Restoran və kafelər üçün kağız menyu xərclərini aradan qaldıran, Admin panelli rəqəmsal
+                            menyu platforması. Müştərilər üçün sürətli interfeys, restoran sahibləri üçün isə anlıq
+                            qiymət yeniləmə imkanı təqdim edir.
+                        </p>
+                        <ul class="space-y-2 mb-8">
+                            <li class="flex items-center text-xs text-gray-300"><i
+                                    class="fas fa-check text-blue-500 mr-2"></i> Çoxdilli dəstək (Az, En, Ru), QR Kod
+                                Ekosistemi, Restoran, Mağaza, Otellər və Ümumi Bizneslər üçün bütün QR ehtiyaclarını bir
+                                yerdə həll edirik</li>
+                            <li class="flex items-center text-xs text-gray-300"><i
+                                    class="fas fa-check text-blue-500 mr-2"></i>
+                                Kontaktsız Həllər 📋 QR ilə menyu | 📶 QR ilə Wi-Fi avtorizasiyası | 🌐 Statik
+                                veb-səhifələr
+                                📍 Google Maps QR (Konum) | 🛍️ Ödəniş linki QR | 🎯 VCard QR (əlaqə məlumatı) 📅 Bron
+                                QR</li>
+                            <li class="flex items-center text-xs text-gray-300"><i
+                                    class="fas fa-check text-blue-500 mr-2"></i> Mobil cihazlar üçün 100% optimizasiya
+                            </li>
+                        </ul>
+                        <div class="flex gap-4">
+                            <a href="https://serxanali.github.io/Q-ng-Menyu/"
+                                class="flex-1 bg-blue-600 hover:bg-blue-700 text-center py-3 rounded-xl font-bold text-sm transition">Canlı
+                                Demo</a>
+                            <a href="https://github.com/SerxanAli"
+                                class="flex-1 bg-gray-700 hover:bg-gray-600 text-center py-3 rounded-xl font-bold text-sm transition">Detallar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="group bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 hover:border-green-500 transition-all duration-300 shadow-2xl">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-14 h-14 bg-green-600/20 rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-gamepad text-green-500 text-2xl"></i>
+                            </div>
+                            <span class="bg-green-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Game
+                                Dev</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 uppercase tracking-tight">Xan Game Portal</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Unity və Three.js texnologiyaları ilə hazırlanmış veb-əsaslı oyun portalı. İçərisində
+                            multiplayer yarış və TPS oyunlarını birləşdirən interaktiv platforma.
+                        </p>
+                        <br>
+                        <ul class="space-y-2 mb-8">
+                            <li class="flex items-center text-xs text-gray-300"><i
+                                    class="fas fa-check text-green-500 mr-2"></i> Photon Multiplayer inteqrasiyası</li>
+                            <li class="flex items-center text-xs text-gray-300"><i
+                                    class="fas fa-check text-green-500 mr-2"></i> Blender 3D model optimizasiyası</li>
+                            <li class="flex items-center text-xs text-gray-300"><i
+                                    class="fas fa-check text-green-500 mr-2"></i> GitHub Pages üzərindən hosting</li>
+                        </ul>
+                        <br><br>
+                        <div class="flex gap-4">
+                            <a href="https://serxanali.github.io/xanGameStation/"
+                                class="flex-1 bg-green-600 hover:bg-green-700 text-center py-3 rounded-xl font-bold text-sm transition">Oyuna
+                                Başla</a>
+                            <a href="https://github.com/SerxanAli" target="_blank"
+                                class="flex-1 bg-gray-700 hover:bg-gray-600 text-center py-3 rounded-xl font-bold text-sm transition">Kodlar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-16 bg-black text-center border-t border-gray-900">
+        <h2 class="text-3xl font-black mb-10 tracking-widest uppercase">Əlaqə</h2>
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <a href="mailto:aliyev.s.v1990@gmail.com"
+                class="bg-gray-900 px-6 py-3 rounded-xl hover:bg-blue-600 transition border border-gray-800 text-sm">
+                <i class="fas fa-envelope mr-2 text-blue-400"></i> aliyev.s.v1990@gmail.com
+            </a>
+            <a href="tel:+994776096939"
+                class="bg-gray-900 px-6 py-3 rounded-xl hover:bg-green-600 transition border border-gray-800 text-sm">
+                <i class="fas fa-phone mr-2 text-green-400"></i> +994 77 609 69 39
+            </a>
+        </div>
+        <div class="flex justify-center space-x-8 text-4xl mb-12">
+            <a href="https://github.com/SerxanAli" target="_blank" class="text-gray-500 hover:text-white transition"><i
+                    class="fab fa-github"></i></a>
+            <a href="www.linkedin.com/in/sərxan-əliyev-491724211"
+                class="text-gray-500 hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="text-gray-600 text-[10px] tracking-widest uppercase font-bold">© 2026 Sərxan Əliyev | Bütün hüquqlar
+            qorunur</p>
+    </footer>
 
 </body>
+
 </html>
